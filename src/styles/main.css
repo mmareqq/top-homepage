@@ -1,14 +1,19 @@
+@import './colors.css';
+
 :root {
   /* ----- COLORS ----- */
-  --clr-white: #ffffff;
-  --clr-black: #000000;
-  --clr-accent: var(--clr-blue-800);
+  --clr-prim: #ffffff;
+  --clr-sec: #000000;
+  --clr-accent: var(--clr-purple-800);
+  --clr-accent-sec: var(--clr-green-600);
 
   /* More colors in colors.css */
 
   /* ----- FONTS ----- */
   --ff-sans: system-ui, sans-serif;
   --ff-serif: 'Times New Roman', Times, Georgia, serif;
+
+  /* NOT USEFUL SINCE TAILWIND */
 
   --fs-100: 0.875rem; /* 14px */
   --fs-400: 1rem; /* 16px */
@@ -32,9 +37,11 @@
   --space-900: 3.5rem; /* 56px */
   --space-950: 5rem; /* 80px */
 
-  --letter-space-100: 0.5px;
-  --letter-space-400: 1px;
-  --letter-space-900: 2px;
+  --transtion-slowest: 1s;
+  --transition-slower: 0.5s;
+  --transition-normal: 0.3s;
+  --transiton-faster: 0.2s;
+  --transition-fastest: 0.1s;
 }
 
 body {
@@ -76,10 +83,10 @@ body {
 }
 
 .text-black {
-  color: var(--clr-black);
+  color: var(--clr-sec);
 }
 .text-white {
-  color: var(--clr-white);
+  color: var(--clr-prim);
 }
 
 .ff-sans {
