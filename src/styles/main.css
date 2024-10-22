@@ -1,5 +1,3 @@
-@import url("./colors.css");
-
 :root {
   /* ----- COLORS ----- */
   --clr-white: #ffffff;
@@ -10,7 +8,7 @@
 
   /* ----- FONTS ----- */
   --ff-sans: system-ui, sans-serif;
-  --ff-serif: "Times New Roman", Times, Georgia, serif;
+  --ff-serif: 'Times New Roman', Times, Georgia, serif;
 
   --fs-100: 0.875rem; /* 14px */
   --fs-400: 1rem; /* 16px */
@@ -57,7 +55,12 @@ body {
   max-width: 93rem;
   display: grid;
   grid-template-columns:
-    [full-width-start] var(--_wrapper-padding) [breakout-start] var(--breakout-padding) [content-start] 1fr [content-end] var(--breakout-padding) [breakout-end] var(--_wrapper-padding) [full-width-end];
+    [full-width-start] var(--_wrapper-padding) [breakout-start] var(
+      --breakout-padding
+    )
+    [content-start] 1fr [content-end] var(--breakout-padding)
+    [breakout-end] var(--_wrapper-padding)
+    [full-width-end];
   margin-inline: auto;
 }
 
@@ -78,58 +81,12 @@ body {
 .text-white {
   color: var(--clr-white);
 }
-.italic {
-  font-style: italic;
-}
 
 .ff-sans {
   font-family: var(--ff-sans);
 }
 .ff-serif {
   font-family: var(--ff-serif);
-}
-
-.fs-100 {
-  font-size: var(--fs-100);
-}
-.fs-200 {
-  font-size: var(--fs-200);
-}
-.fs-300 {
-  font-size: var(--fs-300);
-}
-.fs-400 {
-  font-size: var(--fs-400);
-}
-.fs-500 {
-  font-size: var(--fs-500);
-}
-.fs-600 {
-  font-size: var(--fs-600);
-}
-.fs-700 {
-  font-size: var(--fs-700);
-}
-.fs-800 {
-  font-size: var(--fs-800);
-}
-.fs-900 {
-  font-size: var(--fs-900);
-}
-
-.flex {
-  display: flex;
-  gap: var(--space-200);
-}
-
-.space-between {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.grid {
-  display: grid;
-  gap: var(--space-200);
 }
 
 a {
