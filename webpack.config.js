@@ -19,6 +19,7 @@ module.exports = {
       compress: true,
       hot: true,
    },
+   devtool: 'eval-source-map',
 
    performance: {
       hints: false,

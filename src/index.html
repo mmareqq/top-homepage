@@ -4,17 +4,112 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Homepage</title>
-      <meta
-         name="description"
-         content="A Homepage made on The Odin Project Cirruculum."
-      />
-      <meta
-         name="keywords"
-         content="HTML, CSS, Homepage, frontend, web design"
-      />
-      <meta name="robots" content="index, follow" />
-      <meta name="theme-color" content="#ffffff" />
-      <script src="./index.js" defer></script>
+      <link rel="stylesheet" href="./styles/reset.css" />
+      <link rel="stylesheet" href="./styles/main.css" />
+      <script src="./index.js" type="module"></script>
    </head>
-   <body></body>
+   <body>
+      <header class="header">
+         <div class="wrapper">
+            <nav class="navbar">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="link nav__link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="link nav__link">My Projects</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="link nav__link">Contact</a>
+                  </li>
+               </ul>
+               <button class="theme-btn">Dark / Light</button>
+            </nav>
+         </div>
+      </header>
+
+      <main class="main">
+         <section class="hero-section">
+            <div class="wrapper">
+               <h1 class="title">Welcome to my portfolio!</h1>
+               <div class="bg-img">
+                  <svg
+                     viewBox="0 0 500 500"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="100%"
+                     id="blobSvg">
+                     <defs>
+                        <linearGradient
+                           id="gradient"
+                           x1="0%"
+                           y1="0%"
+                           x2="0%"
+                           y2="100%">
+                           <stop
+                              offset="0%"
+                              style="stop-color: rgb(255, 95, 109)"></stop>
+                           <stop
+                              offset="100%"
+                              style="stop-color: rgb(255, 195, 113)"></stop>
+                        </linearGradient>
+                     </defs>
+                     <path
+                        id="blob"
+                        fill="url(#gradient)"
+                        d="M419,313Q376,376,313,400Q250,424,198.5,388.5Q147,353,124.5,301.5Q102,250,156.5,230.5Q211,211,230.5,162.5Q250,114,308,124Q366,134,414,192Q462,250,419,313Z">
+                        <animate
+                           attributeName="d"
+                           dur="4000ms"
+                           begin="0s"
+                           repeatCount="3"
+                           values="M419,313Q376,376,313,400Q250,424,198.5,388.5Q147,353,124.5,301.5Q102,250,156.5,230.5Q211,211,230.5,162.5Q250,114,308,124Q366,134,414,192Q462,250,419,313Z;
+                        M405.5,282.5Q340,315,333,399.5Q326,484,272,416.5Q218,349,186.5,334Q155,319,161.5,284.5Q168,250,143.5,202.5Q119,155,157.5,119Q196,83,256.5,64Q317,45,369.5,85Q422,125,446.5,187.5Q471,250,405.5,282.5Z;
+                        M419,313Q376,376,313,400Q250,424,198.5,388.5Q147,353,124.5,301.5Q102,250,156.5,230.5Q211,211,230.5,162.5Q250,114,308,124Q366,134,414,192Q462,250,419,313Z"></animate>
+                     </path>
+                  </svg>
+               </div>
+            </div>
+         </section>
+
+         <section class="about-me-section">
+            <div class="wrapper">
+               <div class="flex">
+                  <div class="img-container">
+                     <img src="./assets/profile.jpg" alt="portrait of me" />
+                  </div>
+                  <div class="about-me">
+                     <h2 class="section__title">This is me!</h2>
+                     <div>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Repudiandae, animi accusantium consequatur odit
+                           praesentium soluta voluptatibus sit ratione et
+                           corrupti non nobis, libero itaque velit magni. A
+                           laudantium alias doloribus? Lorem ipsum dolor sit
+                           amet.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="my-projets-section">
+            <div class="wrapper">
+               <h2 class="section__title">My Projects</h2>
+            </div>
+            <div class="projects-grid">
+               <div class="project">Project 1</div>
+               <div class="project">Project 2</div>
+               <div class="project">Project 3</div>
+               <div class="project">Project 4</div>
+               <div class="project">Project 5</div>
+               <div class="project">Project 6</div>
+            </div>
+         </section>
+      </main>
+
+      <footer class="footer"></footer>
+   </body>
 </html>

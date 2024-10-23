@@ -3,12 +3,16 @@
    "singleQuote": true,
    "tabWidth": 3,
    "trailingComma": "es5",
+   "bracketSameLine": true,
+   "arrowParens": "always",
+   "singleAttributePerLine": false,
+   "printWidth": 80,
    "overrides": [
-    {
-      "files": "*.css",
-      "options": {
-        "tabWidth": 2
+      {
+         "files": "*.css",
+         "options": {
+            "tabWidth": 2
+         }
       }
-    }
-  ]
- }
+   ]
+}

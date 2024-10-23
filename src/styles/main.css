@@ -1,4 +1,6 @@
 @import './colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   /* ----- COLORS ----- */
@@ -10,8 +12,8 @@
   /* More colors in colors.css */
 
   /* ----- FONTS ----- */
-  --ff-sans: system-ui, sans-serif;
-  --ff-serif: 'Times New Roman', Times, Georgia, serif;
+  --ff-sans: 'Poppins', sans-serif;
+  --ff-serif: 'Playwrite GB S', cursive;
 
   /* NOT USEFUL SINCE TAILWIND */
 
@@ -51,35 +53,14 @@ body {
   margin: 0;
 }
 
-.wrapper > * {
-  grid-area: content;
-}
-
-.wrapper,
-.wrapper--small {
-  --_wrapper-padding: 5%;
-  --breakout-padding: 3rem;
-  max-width: 93rem;
-  display: grid;
-  grid-template-columns:
-    [full-width-start] var(--_wrapper-padding) [breakout-start] var(
-      --breakout-padding
-    )
-    [content-start] 1fr [content-end] var(--breakout-padding)
-    [breakout-end] var(--_wrapper-padding)
-    [full-width-end];
+.wrapper {
+  width: 90%;
+  max-width: 1400px;
   margin-inline: auto;
 }
 
-.wrapper--small {
-  --_wrapper-padding: 15%;
-  max-width: 75rem;
-}
-.wrapper--full-width > * {
-  grid-area: full-width;
-}
-.wrapper--breakout > * {
-  grid-area: breakout;
+.wrapper--full-width {
+  width: 100%;
 }
 
 .text-black {
@@ -98,4 +79,29 @@ body {
 
 a {
   color: var(--clr-accent);
+}
+
+header {
+  padding-block: 1em;
+  background-color: gray;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  gap: 3em;
+}
+
+.nav__link {
+  display: block;
+  padding: 0.25em;
+  outline: 1px solid red;
+}
+
+.nav__link:hover {
+  text-decoration: none;
 }
