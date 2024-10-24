@@ -82,8 +82,12 @@ a {
 }
 
 header {
-  padding-block: 1em;
-  background-color: gray;
+  position: sticky;
+  top: 0;
+  padding-block: 2em;
+  background-color: rgba(26, 26, 26, 0.8);
+  z-index: 1;
+  color: #fff;
 }
 
 .navbar {
@@ -98,10 +102,38 @@ header {
 
 .nav__link {
   display: block;
-  padding: 0.25em;
-  outline: 1px solid red;
+  padding: 0 0.5em;
 }
 
 .nav__link:hover {
   text-decoration: none;
+}
+
+.hero-section {
+  overflow: hidden;
+  min-height: calc(100svh - 4em - 1em * 1.5);
+  display: grid;
+  place-content: center;
+}
+
+.title {
+  font-size: var(--fs-900);
+}
+
+.about-me-section {
+  margin-top: 50rem;
+}
+
+.blob-svg {
+  position: absolute;
+  margin-inline: auto;
+  opacity: 0.8;
+}
+
+.hero__blob-corner {
+  width: clamp(500px, 60vw, 1000px);
+  /* opacity: 0.35; */
+  top: 0;
+  left: 0;
+  /* rotate: 135deg; */
 }
